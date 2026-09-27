@@ -1,0 +1,25 @@
+name: Zest support
+description: Report a problem or ask for help.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Never include API keys, passwords, receipts, personal contact details or private backups."
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system
+      placeholder: iPad Air, iPadOS version
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Zest version
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include what you expected and the steps that led to the problem.
+    validations:
+      required: true
